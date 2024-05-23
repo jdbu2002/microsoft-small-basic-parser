@@ -1,4 +1,4 @@
-from lexer import main as lexer
+from syn_lexer import main as lexer
 from syn_parser import main as parser
 
 
