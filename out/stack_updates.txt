@@ -1,0 +1,77 @@
+statement inicio $
+ID idst inicio $
+idst inicio $
+TKN_EQUALS be inicio $
+be inicio $
+be2 beprima inicio $
+bt be2prima beprima inicio $
+ae be2prima beprima inicio $
+ae2 aeprima be2prima beprima inicio $
+t ae2prima aeprima be2prima beprima inicio $
+TKN_MINUS t2 ae2prima aeprima be2prima beprima inicio $
+t2 ae2prima aeprima be2prima beprima inicio $
+TKN_NUMBER ae2prima aeprima be2prima beprima inicio $
+ae2prima aeprima be2prima beprima inicio $
+aeprima be2prima beprima inicio $
+opsum ae2 aeprima be2prima beprima inicio $
+TKN_PLUS ae2 aeprima be2prima beprima inicio $
+ae2 aeprima be2prima beprima inicio $
+t ae2prima aeprima be2prima beprima inicio $
+t2 ae2prima aeprima be2prima beprima inicio $
+TKN_LEFT_PAREN be TKN_RIGHT_PAREN ae2prima aeprima be2prima beprima inicio $
+be TKN_RIGHT_PAREN ae2prima aeprima be2prima beprima inicio $
+be2 beprima TKN_RIGHT_PAREN ae2prima aeprima be2prima beprima inicio $
+bt be2prima beprima TKN_RIGHT_PAREN ae2prima aeprima be2prima beprima inicio $
+ae be2prima beprima TKN_RIGHT_PAREN ae2prima aeprima be2prima beprima inicio $
+ae2 aeprima be2prima beprima TKN_RIGHT_PAREN ae2prima aeprima be2prima beprima inicio $
+t ae2prima aeprima be2prima beprima TKN_RIGHT_PAREN ae2prima aeprima be2prima beprima inicio $
+t2 ae2prima aeprima be2prima beprima TKN_RIGHT_PAREN ae2prima aeprima be2prima beprima inicio $
+TKN_NUMBER ae2prima aeprima be2prima beprima TKN_RIGHT_PAREN ae2prima aeprima be2prima beprima inicio $
+ae2prima aeprima be2prima beprima TKN_RIGHT_PAREN ae2prima aeprima be2prima beprima inicio $
+opmul t ae2prima aeprima be2prima beprima TKN_RIGHT_PAREN ae2prima aeprima be2prima beprima inicio $
+TKN_TIMES t ae2prima aeprima be2prima beprima TKN_RIGHT_PAREN ae2prima aeprima be2prima beprima inicio $
+t ae2prima aeprima be2prima beprima TKN_RIGHT_PAREN ae2prima aeprima be2prima beprima inicio $
+t2 ae2prima aeprima be2prima beprima TKN_RIGHT_PAREN ae2prima aeprima be2prima beprima inicio $
+TKN_NUMBER ae2prima aeprima be2prima beprima TKN_RIGHT_PAREN ae2prima aeprima be2prima beprima inicio $
+ae2prima aeprima be2prima beprima TKN_RIGHT_PAREN ae2prima aeprima be2prima beprima inicio $
+opmul t ae2prima aeprima be2prima beprima TKN_RIGHT_PAREN ae2prima aeprima be2prima beprima inicio $
+TKN_DIV t ae2prima aeprima be2prima beprima TKN_RIGHT_PAREN ae2prima aeprima be2prima beprima inicio $
+t ae2prima aeprima be2prima beprima TKN_RIGHT_PAREN ae2prima aeprima be2prima beprima inicio $
+t2 ae2prima aeprima be2prima beprima TKN_RIGHT_PAREN ae2prima aeprima be2prima beprima inicio $
+var ae2prima aeprima be2prima beprima TKN_RIGHT_PAREN ae2prima aeprima be2prima beprima inicio $
+ID var2 ae2prima aeprima be2prima beprima TKN_RIGHT_PAREN ae2prima aeprima be2prima beprima inicio $
+var2 ae2prima aeprima be2prima beprima TKN_RIGHT_PAREN ae2prima aeprima be2prima beprima inicio $
+ae2prima aeprima be2prima beprima TKN_RIGHT_PAREN ae2prima aeprima be2prima beprima inicio $
+aeprima be2prima beprima TKN_RIGHT_PAREN ae2prima aeprima be2prima beprima inicio $
+opsum ae2 aeprima be2prima beprima TKN_RIGHT_PAREN ae2prima aeprima be2prima beprima inicio $
+TKN_MINUS ae2 aeprima be2prima beprima TKN_RIGHT_PAREN ae2prima aeprima be2prima beprima inicio $
+ae2 aeprima be2prima beprima TKN_RIGHT_PAREN ae2prima aeprima be2prima beprima inicio $
+t ae2prima aeprima be2prima beprima TKN_RIGHT_PAREN ae2prima aeprima be2prima beprima inicio $
+t2 ae2prima aeprima be2prima beprima TKN_RIGHT_PAREN ae2prima aeprima be2prima beprima inicio $
+TKN_LEFT_PAREN be TKN_RIGHT_PAREN ae2prima aeprima be2prima beprima TKN_RIGHT_PAREN ae2prima aeprima be2prima beprima inicio $
+be TKN_RIGHT_PAREN ae2prima aeprima be2prima beprima TKN_RIGHT_PAREN ae2prima aeprima be2prima beprima inicio $
+be2 beprima TKN_RIGHT_PAREN ae2prima aeprima be2prima beprima TKN_RIGHT_PAREN ae2prima aeprima be2prima beprima inicio $
+bt be2prima beprima TKN_RIGHT_PAREN ae2prima aeprima be2prima beprima TKN_RIGHT_PAREN ae2prima aeprima be2prima beprima inicio $
+ae be2prima beprima TKN_RIGHT_PAREN ae2prima aeprima be2prima beprima TKN_RIGHT_PAREN ae2prima aeprima be2prima beprima inicio $
+ae2 aeprima be2prima beprima TKN_RIGHT_PAREN ae2prima aeprima be2prima beprima TKN_RIGHT_PAREN ae2prima aeprima be2prima beprima inicio $
+t ae2prima aeprima be2prima beprima TKN_RIGHT_PAREN ae2prima aeprima be2prima beprima TKN_RIGHT_PAREN ae2prima aeprima be2prima beprima inicio $
+t2 ae2prima aeprima be2prima beprima TKN_RIGHT_PAREN ae2prima aeprima be2prima beprima TKN_RIGHT_PAREN ae2prima aeprima be2prima beprima inicio $
+TKN_NUMBER ae2prima aeprima be2prima beprima TKN_RIGHT_PAREN ae2prima aeprima be2prima beprima TKN_RIGHT_PAREN ae2prima aeprima be2prima beprima inicio $
+ae2prima aeprima be2prima beprima TKN_RIGHT_PAREN ae2prima aeprima be2prima beprima TKN_RIGHT_PAREN ae2prima aeprima be2prima beprima inicio $
+aeprima be2prima beprima TKN_RIGHT_PAREN ae2prima aeprima be2prima beprima TKN_RIGHT_PAREN ae2prima aeprima be2prima beprima inicio $
+be2prima beprima TKN_RIGHT_PAREN ae2prima aeprima be2prima beprima TKN_RIGHT_PAREN ae2prima aeprima be2prima beprima inicio $
+beprima TKN_RIGHT_PAREN ae2prima aeprima be2prima beprima TKN_RIGHT_PAREN ae2prima aeprima be2prima beprima inicio $
+TKN_RIGHT_PAREN ae2prima aeprima be2prima beprima TKN_RIGHT_PAREN ae2prima aeprima be2prima beprima inicio $
+ae2prima aeprima be2prima beprima TKN_RIGHT_PAREN ae2prima aeprima be2prima beprima inicio $
+aeprima be2prima beprima TKN_RIGHT_PAREN ae2prima aeprima be2prima beprima inicio $
+opsum ae2 aeprima be2prima beprima TKN_RIGHT_PAREN ae2prima aeprima be2prima beprima inicio $
+TKN_MINUS ae2 aeprima be2prima beprima TKN_RIGHT_PAREN ae2prima aeprima be2prima beprima inicio $
+ae2 aeprima be2prima beprima TKN_RIGHT_PAREN ae2prima aeprima be2prima beprima inicio $
+t ae2prima aeprima be2prima beprima TKN_RIGHT_PAREN ae2prima aeprima be2prima beprima inicio $
+t2 ae2prima aeprima be2prima beprima TKN_RIGHT_PAREN ae2prima aeprima be2prima beprima inicio $
+TKN_NUMBER ae2prima aeprima be2prima beprima TKN_RIGHT_PAREN ae2prima aeprima be2prima beprima inicio $
+ae2prima aeprima be2prima beprima TKN_RIGHT_PAREN ae2prima aeprima be2prima beprima inicio $
+aeprima be2prima beprima TKN_RIGHT_PAREN ae2prima aeprima be2prima beprima inicio $
+be2prima beprima TKN_RIGHT_PAREN ae2prima aeprima be2prima beprima inicio $
+beprima TKN_RIGHT_PAREN ae2prima aeprima be2prima beprima inicio $
+TKN_RIGHT_PAREN ae2prima aeprima be2prima beprima inicio $

@@ -1,0 +1,106 @@
+inicio -> comando inicio
+inicio -> funcion inicio
+inicio -> $
+
+comando -> declarar
+comando -> si
+comando -> mientras
+comando -> para
+comando -> integrada
+comando -> ir
+
+declarar -> ID tipo
+
+tipo -> matriz TKN_EQUALS logico1
+tipo -> TKN_COLON
+tipo -> TKN_LEFT_PAREN TKN_RIGHT_PAREN
+
+matriz -> TKN_LEFT_BRAC logico1 TKN_RIGHT_BRAC matriz
+matriz -> ''
+
+identificador -> ID matriz
+
+logico1 -> logico2 logico1'
+
+logico1' -> OR logico2 logico1'
+logico1' -> ''
+
+logico2 -> logico3 logico2'
+
+logico2' -> AND logico3 logico2'
+logico2' -> ''
+
+logico3 -> aritmetica1 logico3'
+logico3' -> operrel aritmetica1
+logico3' -> ''
+
+operrel -> TKN_EQUALS
+operrel -> TKN_DIFF
+operrel -> TKN_GREATER
+operrel -> TKN_LESS
+operrel -> TKN_GEQ
+operrel -> TKN_LEQ
+
+aritmetica1 -> aritmetica2 aritmetica1'
+
+aritmetica1' -> opsuma aritmetica2 aritmetica1'
+aritmetica1' -> ''
+            
+opsuma -> TKN_PLUS
+opsuma -> TKN_MINUS
+
+aritmetica2 -> aritmetica3 aritmetica2'
+
+aritmetica2' -> opmultiplicar aritmetica3 aritmetica2'
+aritmetica2' -> ''
+                  
+opmultiplicar -> TKN_TIMES
+opmultiplicar -> TKN_DIV
+
+aritmetica3 -> TKN_MINUS aritmetica4
+aritmetica3 -> aritmetica4
+
+aritmetica4 -> valor
+aritmetica4 -> integrada
+aritmetica4 -> identificador
+aritmetica4 -> TKN_LEFT_PAREN logico1 TKN_RIGHT_PAREN
+           
+valor -> TRUE
+valor -> FALSE
+valor -> TKN_NUMBER
+valor -> TKN_TEXT
+
+integrada -> palabrasfuncionales TKN_PERIOD ID TKN_LEFT_PAREN parametros TKN_RIGHT_PAREN
+
+palabrasfuncionales -> TEXTWINDOW
+palabrasfuncionales -> ARRAY
+palabrasfuncionales -> STACK
+palabrasfuncionales -> PROGRAM
+                   
+parametros -> logico1 parametros'
+parametros -> ''
+
+parametros' -> TKN_COMMA parametros
+parametros' -> ''
+           
+comandos -> comando comandos
+comandos -> ''
+
+si -> IF TKN_LEFT_PAREN logico1 TKN_RIGHT_PAREN THEN comandos sinosis sino ENDIF
+
+sinosis -> ELSEIF TKN_LEFT_PAREN logico1 TKN_RIGHT_PAREN THEN comandos sinosis
+sinosis -> '' 
+
+sino -> ELSE comandos
+sino -> '' 
+
+mientras -> WHILE TKN_LEFT_PAREN logico1 TKN_RIGHT_PAREN comandos ENDWHILE
+
+para -> FOR identificador TKN_EQUALS logico1 TO logico1 paso comandos ENDFOR
+
+paso -> STEP aritmetica1
+paso -> '' 
+
+funcion -> SUB ID comandos ENDSUB
+
+ir -> GOTO ID

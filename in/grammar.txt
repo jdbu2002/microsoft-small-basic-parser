@@ -1,0 +1,81 @@
+inicio -> statement inicio
+inicio -> $
+statement -> bifunc
+inicio -> SUB ID subst ENDSUB inicio
+subst -> statement subst
+subst -> ''
+statement -> GOTO ID
+statement -> WHILE TKN_LEFT_PAREN be TKN_RIGHT_PAREN whilest ENDWHILE
+whilest -> statement whilest
+whilest -> ''
+statement -> FOR asig TO be forst ENDFOR
+asig -> ID asig2
+asig2 -> TKN_EQUALS be
+asig2 -> TKN_LEFT_BRAC be TKN_RIGHT_BRAC asig2
+forst -> STEP ae forst2
+forst -> forst2
+forst2 -> statement forst2
+forst2 -> ''
+statement -> IF TKN_LEFT_PAREN be TKN_RIGHT_PAREN THEN ifst2 ENDIF
+ifst2 -> statement ifst2
+ifst2 -> ifst3
+ifst2 -> ''
+ifst3 -> ELSEIF TKN_LEFT_PAREN be TKN_RIGHT_PAREN THEN ifst2
+ifst3 -> ELSE ifst4
+ifst4 -> statement
+ifst4 -> ''
+statement -> ID idst
+idst -> TKN_EQUALS be
+idst -> idst2
+idst2 -> TKN_LEFT_BRAC be TKN_RIGHT_BRAC idst2prima
+idst2prima -> idst2
+idst2prima -> TKN_EQUALS be
+idst -> TKN_LEFT_PAREN TKN_RIGHT_PAREN
+idst -> TKN_COLON
+bifunc -> bifun TKN_PERIOD ID TKN_LEFT_PAREN funcparam TKN_RIGHT_PAREN
+bifun -> PROGRAM
+bifun -> ARRAY
+bifun -> TEXTWINDOW
+bifun -> STACK
+funcparam -> be funcparam2
+funcparam2 -> TKN_COMMA funcparam
+funcparam2 -> ''
+funcparam -> TKN_COMMA funcparam
+funcparam -> ''
+be -> be2 beprima
+beprima -> bop be
+beprima -> ''
+be2 -> bt be2prima
+be2prima -> bcop bt
+be2prima -> ''
+bt -> ae
+bcop -> TKN_EQUALS
+bcop -> TKN_DIFF
+bcop -> TKN_LESS
+bcop -> TKN_LEQ
+bcop -> TKN_GREATER
+bcop -> TKN_GEQ
+bop -> OR
+bop -> AND
+ae -> ae2 aeprima
+aeprima -> opsum ae2 aeprima
+aeprima -> ''
+ae2 -> t ae2prima
+ae2prima -> opmul t ae2prima
+ae2prima -> ''
+opsum -> TKN_PLUS
+opsum -> TKN_MINUS
+opmul -> TKN_TIMES
+opmul -> TKN_DIV
+t -> TKN_MINUS t2
+t -> t2
+t2 -> TKN_NUMBER
+t2 -> TKN_LEFT_PAREN be TKN_RIGHT_PAREN
+t2 -> TKN_TEXT
+t2 -> TRUE
+t2 -> FALSE
+t2 -> bifunc
+t2 -> var
+var -> ID var2
+var2 -> ''
+var2 -> TKN_LEFT_BRAC be TKN_RIGHT_BRAC var2
